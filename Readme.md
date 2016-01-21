@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Евгений Недилько](https://htmlacademy.ru/profile/id49128).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Захарченко] (https://htmlacademy.ru/profile/drewtsure)
 
 ---
 
