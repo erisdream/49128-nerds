@@ -1,0 +1,296 @@
+ body {
+  font-size: 14px;
+  font-family: 'Roboto-medium', sans-serif;
+} 
+
+.container { 
+    width: 900px;
+    padding: 0 10px 0 10px;
+    margin: 0 auto;
+}
+
+/*.outline {
+    border: 1px solid green;
+}
+*/
+.logo {
+    float: left;
+    width: 140px;
+    margin-right: 183px;
+}
+
+.main-navigation ul, li {
+    text-transform: uppercase;
+    float: left;
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+}
+
+.main-navigation li {
+    margin-right: 44px;
+    margin-top: 60px;
+}
+
+.main-navigation li a {
+    text-decoration: none;
+    color: black;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.cart-block {
+    text-transform: uppercase;
+    float: right;
+    width: 84px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.cart-block a {
+    text-decoration: none;
+    color: black;
+}
+
+.slider {
+    float: left;
+    width: 380px;
+    padding: 0px;
+}
+
+.slider-points {
+    float: left;
+    width: 60px;
+    margin: 190px 0px 0px 28px;
+}
+
+.slider-points a {
+    margin-right: 7px;
+}
+
+.slider h1 {
+    font-size: 36px;
+    margin: 21px 0px 17px 0px;
+    line-height: 36px;
+}
+
+.slider p {
+    font-size: 14px;
+    margin: 0px 0px 38px 0px;
+    line-height: 22px;
+}
+
+.slider a {
+    text-decoration: none;
+    padding: 10px 72px;
+}
+
+.slider-picture {
+    float: right;
+    height: 230px;
+    width: 357px;
+    padding-left: 60px;
+    padding-bottom: 70px;
+}
+
+.features-row {
+    width: 900px;
+    padding: 80px 10px 0 10px;
+    margin: 0 auto 48px auto;
+}
+
+.features-item {
+    float: left;
+    width: 240px;
+    height: 300px;
+    margin-right: 80px;
+}
+
+.features-item:last-child {
+    float: right;
+    margin-right: 18px;
+}
+
+.features-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 25px 0px 18px 0px;
+}
+
+.features-item p {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.features-item a {
+    display: block;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding: 8px 41px;
+    text-decoration:  none;
+    margin: 26px 98px 0px 0px;
+}
+
+.content-columns {
+    width: 900px;
+    height: 345px;
+    padding: 80px 10px 0 10px;
+    margin: 0 auto 81px auto;
+}
+
+.content-columns h1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 17px;
+}
+
+.content-column-left p {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 15px;
+}
+
+.content-column-left span {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-top: 44px;
+}
+
+.content-column-left li {
+    display: block;
+    list-style: none;
+    margin: 11px 60px 17px -3px;
+    text-transform: none;
+}
+
+.content-column-left {
+    float: left;
+    width: 620px;
+}
+
+.content-column-right {
+    float: right;
+    width: 258px;
+}
+
+.content-column-right p {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 15px;
+}
+
+.content-column-right span {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-top: 48px;
+}
+
+.content-column-right li {
+    display: block;
+    list-style: none;
+    margin: 11px 0px 17px -3px;
+    text-transform: none;
+}
+
+.partners-sites {
+    width: 900px;
+    height: 168px;
+    padding: 0px 0px;
+    margin: 0px auto 85px auto;
+}
+
+.partners-sites a {
+    float: left;
+    margin: 0px 85px 0px 13px;
+    width: 220px;
+    
+}
+
+.partners-sites a:last-child {
+    float: right;
+    margin-right: 27px;
+    width: 220px;
+}
+
+.map .container {
+    width: 1200px;
+    height: 415px;
+    padding: 0px 10px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+.contacts {
+    margin: 88px 0px 0px 150px;
+    height: 225px;
+    width: 230px;
+    padding: 15px 0px 0px 21px;
+}
+
+.contacts p {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.contacts a {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 11px 0px 11px 55px;
+    margin: 30px 22px 0px 2px;
+}
+
+.main-footer .container {
+    width: 900px;
+    height: 215px;
+    padding: 0px 10px;
+    margin: 0 auto 75px auto;
+}
+
+.main-footer h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 36px;
+    line-height: 27px;
+}
+
+.social-links {
+    float: left;
+    width: 300px;
+    margin-top: 77px;
+}
+
+.social-links a {
+    display: block;
+    float: left;
+    padding: 24px 25px 24px 26px;
+    margin: 0px 34px 0px 0px; 
+}
+
+.social-links a:last-child {
+    float: right;
+     margin-right: 55px;
+}
+
+.letsbefriends {
+    float: right;
+    margin: 80px 10px;
+}
+
+.letsbefriends p {
+     margin: 16px 0px;
+    font-size: 16px;
+    line-height: 17px;
+}
