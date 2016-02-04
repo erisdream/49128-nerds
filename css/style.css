@@ -61,26 +61,28 @@
      float: left;
      width: 380px;
      padding: 0px;
+     margin-top: 81px;
+     margin-bottom: 90px;
  }
  
  .slider-points {
      float: left;
      width: 60px;
-     margin: 190px 0px 0px 28px;
+     margin: 250px 0px 0px 28px;
  }
  
  .slider-points a {
      margin-right: 7px;
  }
  
- .slider h1 {
+ .slide-title {
      font-size: 36px;
-     margin: 21px 0px 17px 0px;
+     margin: 0px 0px 17px 0px;
      line-height: 36px;
  }
  
  .slider p {
-     font-size: 14px;
+     font-size: 16px;
      margin: 0px 0px 38px 0px;
      line-height: 22px;
  }
@@ -90,17 +92,9 @@
      padding: 10px 72px;
  }
  
- .slider-picture {
-     float: right;
-     height: 230px;
-     width: 357px;
-     padding-left: 60px;
-     padding-bottom: 70px;
- }
- 
  .features-row {
      width: 900px;
-     padding: 80px 10px 0 10px;
+     padding: 84px 10px 0px 3px;
      margin: 0 auto 48px auto;
  }
  
@@ -113,13 +107,13 @@
  
  .features-item:last-child {
      float: right;
-     margin-right: 18px;
+     margin-right: 19px;
  }
  
  .features-title {
      font-size: 18px;
      text-transform: uppercase;
-     margin: 25px 0px 18px 0px;
+     margin: 24px 0px 17px 0px;
  }
  
  .features-item p {
@@ -132,16 +126,15 @@
      font-size: 12px;
      line-height: 22px;
      text-transform: uppercase;
-     padding: 8px 41px;
+     padding: 8px 40px;
      text-decoration: none;
-     margin: 26px 98px 0px 0px;
+     margin: 26px 100px 0px 0px;
  }
  
  .content-columns {
      width: 900px;
-     height: 345px;
-     padding: 80px 10px 0 10px;
-     margin: 0 auto 81px auto;
+     padding: 78px 10px 0 0px;
+     margin: 0 auto 58px auto;
  }
  
  .content-columns h1 {
@@ -154,10 +147,11 @@
      display: block;
      font-size: 16px;
      line-height: 22px;
-     margin-top: 15px;
+     margin-top: 18px;
+     margin-left: 15px''
  }
  
- .content-column-left span {
+ .content-column-left div {
      display: block;
      font-size: 16px;
      line-height: 22px;
@@ -189,7 +183,7 @@
      margin-top: 15px;
  }
  
- .content-column-right span {
+ .content-column-right div {
      display: block;
      font-size: 16px;
      line-height: 22px;
@@ -232,10 +226,11 @@
  }
  
  .contacts {
+     font-size: 16px;
      margin: 88px 0px 0px 150px;
      height: 225px;
      width: 230px;
-     padding: 15px 0px 0px 21px;
+     padding: 13px 0px 0px 22px;
  }
  
  .contacts p {
@@ -249,8 +244,8 @@
      line-height: 18px;
      text-transform: uppercase;
      text-decoration: none;
-     padding: 11px 0px 11px 55px;
-     margin: 30px 22px 0px 2px;
+     padding: 10px 0px 11px 55px;
+     margin: 32px 22px 0px 2px;
  }
  
  .main-footer .container {
@@ -269,29 +264,36 @@
  
  .social-links {
      float: left;
-     width: 300px;
+     width: 243px;
      margin-top: 77px;
  }
  
  .social-links a {
+     font-size: 10px;
      display: block;
      float: left;
-     padding: 24px 25px 24px 26px;
-     margin: 0px 34px 0px 0px;
+     padding: 10px 10px 30px 5px;
+     margin: 0px 24px 0px 5px;
+     text-align: center;
  }
  
  .social-links a:last-child {
      float: right;
-     margin-right: 55px;
+     margin-right: 0px;
  }
  
  .letsbefriends {
      float: right;
-     margin: 80px 10px;
+     margin: 70px 10px 0px 0px;
  }
+
+.letsbefriends h2 {
+    font-size: 36px;
+    margin: 0px
+}
  
  .letsbefriends p {
-     margin: 16px 0px;
+     margin: 10px 0px;
      font-size: 16px;
      line-height: 17px;
  }
