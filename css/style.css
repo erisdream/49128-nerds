@@ -8,6 +8,10 @@
      padding: 0 10px 0 10px;
      margin: 0 auto;
  }
+
+.main-header {
+     background: #eeeeee;
+}
  
  * {
      outline: 1px solid green;
@@ -17,6 +21,7 @@
      float: left;
      width: 140px;
      margin-right: 183px;
+     margin-top: 27px;
  }
  
  .main-navigation ul,
@@ -31,6 +36,7 @@
  .main-navigation li {
      margin-right: 44px;
      margin-top: 60px;
+     margin-bottom: 20px;
  }
  
  .main-navigation li a {
@@ -66,16 +72,16 @@
  .slider-points {
      float: left;
      width: 60px;
-     margin: 190px 0px 0px 28px;
+     margin: 235px 0px 90px 28px;
  }
  
  .slider-points a {
      margin-right: 7px;
  }
  
- .slider h1 {
+ .slidename {
      font-size: 36px;
-     margin: 21px 0px 17px 0px;
+     margin: 61px 0px 17px 0px;
      line-height: 36px;
  }
  
@@ -90,18 +96,10 @@
      padding: 10px 72px;
  }
  
- .slider-picture {
-     float: right;
-     height: 230px;
-     width: 357px;
-     padding-left: 60px;
-     padding-bottom: 70px;
- }
- 
  .features-row {
      width: 900px;
-     padding: 80px 10px 0 10px;
-     margin: 0 auto 48px auto;
+     padding: 80px 10px 30px 0px;
+     margin: 0 auto;
  }
  
  .features-item {
@@ -140,7 +138,7 @@
  .content-columns {
      width: 900px;
      height: 345px;
-     padding: 80px 10px 0 10px;
+     padding: 96px 0px 0px 0px;
      margin: 0 auto 81px auto;
  }
  
@@ -157,7 +155,7 @@
      margin-top: 15px;
  }
  
- .content-column-left span {
+ .content-column-left div {
      display: block;
      font-size: 16px;
      line-height: 22px;
@@ -180,21 +178,27 @@
  .content-column-right {
      float: right;
      width: 258px;
+     padding: 13px 0px;
  }
  
  .content-column-right p {
      display: block;
      font-size: 16px;
      line-height: 22px;
-     margin-top: 15px;
+     margin-top: 24px;
+     padding-left: 80px;
  }
+
+.content-column-right img {
+    margin-left: 30px;
+}
  
- .content-column-right span {
+ .content-column-right div {
      display: block;
      font-size: 16px;
      line-height: 22px;
      text-transform: uppercase;
-     margin-top: 48px;
+     margin-top: 65px;
  }
  
  .content-column-right li {
@@ -208,7 +212,7 @@
      width: 900px;
      height: 168px;
      padding: 0px 0px;
-     margin: 0px auto 85px auto;
+     margin: 0px auto 88px auto;
  }
  
  .partners-sites a {
@@ -225,14 +229,15 @@
  
  .map .container {
      width: 1200px;
-     height: 415px;
-     padding: 0px 10px;
+     height: 240px;
+     padding: 87px 10px;
      margin: 0px auto;
-     border: 1px solid black;
+     background-image: url("../img/Слой 2.jpg");
+     background-repeat: no-repeat;
  }
  
  .contacts {
-     margin: 88px 0px 0px 150px;
+     margin: 0px 0px 0px 150px;
      height: 225px;
      width: 230px;
      padding: 15px 0px 0px 21px;
@@ -269,29 +274,104 @@
  
  .social-links {
      float: left;
-     width: 300px;
+     width: 240px;
      margin-top: 77px;
+     font-size: 10px;
+     text-align: center;
  }
  
  .social-links a {
      display: block;
      float: left;
-     padding: 24px 25px 24px 26px;
-     margin: 0px 34px 0px 0px;
+     padding: 24px 17px 24px 0px;
+     margin: 0px 27px 0px 0px;
  }
  
  .social-links a:last-child {
      float: right;
-     margin-right: 55px;
+     margin-right: 0px;
  }
  
  .letsbefriends {
      float: right;
-     margin: 80px 10px;
+     margin: 44px 10px 0px 0px;
  }
+
+.letsbefriends h2 {
+    font-size: 36px;
+    margin-bottom: 0px;
+}
  
  .letsbefriends p {
-     margin: 16px 0px;
+     margin:9px 0px;
+     padding-top: 0px;
      font-size: 16px;
      line-height: 17px;
  }
+
+.inner-page h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 12px -20px 0px 0px;
+    text-transform: uppercase;
+    line-height: 48px;
+    padding-bottom: 80px;
+}
+
+.inner-page .container {
+    padding: 0px;
+}
+
+.filter {
+    float: left;
+    margin-top: 83px;
+    width: 250px;
+    height: 1100px;
+    margin-left: -10px;
+}
+
+.goods-list: {
+    float: right;
+}
+
+.sorting {
+    display: inline-block;
+    margin-top: 74px;
+    font-size: 12px;
+}
+
+legend {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: -6px;
+}
+
+label {
+    font-size: 16px;
+    margin-top: 22px;
+}
+
+.price {
+    height: 204px;
+}
+
+.grid {
+    height: 173px;
+}
+
+label {
+    display: block;
+}
+
+.features {
+    height: 270px;
+}
+
+.good {
+    display: inline-block;
+    width: 240px;
+    height: 270px;
+    margin-left: 80px;
+    margin-bottom: 68px;
+    margin-top: 18px;
+}
