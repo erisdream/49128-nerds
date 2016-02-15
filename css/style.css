@@ -1,26 +1,28 @@
 body {
   font-size: 14px;
-  font-family: 'Roboto-medium', sans-serif;
+  font-family: "Roboto-medium", "arial", "helvetica", sans-serif;
 }
 
 .container {
   width: 880px;
-  padding: 27px 10px;
+  padding: 0px 10px;
   margin: 0 auto;
 }
 
 .main-header {
   background: #eeeeee;
-  margin-bottom: 55px
+  margin-bottom: 81px;
+  padding-top: 27px;
 }
 
 * {
   outline: 1px solid green;
 }
 
-.top {
+
+.menu {
   padding-top: 32px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .logo {
@@ -30,6 +32,7 @@ body {
 
 .main-navigation {
   float: right;
+  max-width: 560px;
 }
 
 .main-navigation ul,
@@ -69,6 +72,62 @@ body {
   color: black;
 }
 
+.slider {
+  position: relative;
+  width: 880px;
+  height: 308px;
+  margin: 0 auto;
+}
+
+.slider input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+
+.slider-points {
+  position: absolute;
+  bottom: 95px;
+  left: 49%;
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 100;
+}
+
+.slider-points .active {
+  background: #c1c1c1;
+}
+
+.slider-points label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+  background: white;
+  border: 3px solid white;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-points label[for="btn-1"], #btn-2:checked ~ .slider-points label[for="btn-2"], #btn-3:checked ~ .slider-points label[for="btn-3"] {
+  background: #c1c1c1;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 298px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+
+
+
 .slidename {
   font-size: 36px;
   margin: 0px 0px 17px 0px;
@@ -76,24 +135,8 @@ body {
   padding-top: 20px;
 }
 
-.slide1 {
-  background-image: url('../img/slide1.png');
-  background-position: 542px 0px;
-  background-repeat: no-repeat;
-}
 
-.slider {
-  position: relative;
-  margin-bottom: 52px;
-  overflow: hidden;
-}
 
-.slider-points {
-  display: inline-block;
-  position: absolute;
-  top: 193px;
-  left: 406px;
-}
 
 .slider p {
   font-size: 14px;
@@ -107,10 +150,38 @@ body {
   padding: 10px 70px;
 }
 
-.slider-points a {
-  padding: 0px;
-  margin: 0px;
-  margin-right: 7px;
+.slide:nth-child(1) {
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+
+.slide:nth-child(2) {
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+
+.slide:nth-child(3) {
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+
+.slide {
+  display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
 }
 
 .features-item {
@@ -168,9 +239,6 @@ body {
 .content-column-left {
   float: left;
   width: 620px;
-}
-
-.content-column-left {
   padding-top: 11px;
 }
 
@@ -228,7 +296,7 @@ body {
 
 .partners-sites {
   padding: 0px 0px;
-  margin: 0px auto 92px auto;
+  margin: 0px auto 118px auto;
 }
 
 .partners-sites a {
@@ -253,23 +321,20 @@ body {
 }
 
 .map {
+  position: relative; 
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  padding-bottom: 80px;
+  height: 416px;
+  margin-bottom: 79px;
   z-index: 5;
-}
-
-.map .container {
-  height: 240px;
-  padding: 87px 10px;
-  margin: 0px auto;
-  position: relative;
 }
 
 .contacts {
   position: absolute;
   top: 88px;
+  left: 50%; 
+  margin-left: -440px;
   height: 225px;
   width: 210px;
   padding: 14px 20px 0px 20px;
@@ -315,6 +380,7 @@ body {
   float: left;
   padding: 20px 10px;
   margin: 0px 30px 0px 0px;
+  font-size: 0;
 }
 
 .social-links a:last-child {
@@ -372,6 +438,10 @@ body {
   line-height: 17px;
 }
 
+.welcome{
+  padding: 22px 23px 28px 0;
+}
+
 .inner-page h1 {
   font-size: 40px;
   text-align: center;
@@ -380,6 +450,7 @@ body {
   line-height: 48px;
   padding-bottom: 55px;
   padding-left: 40px;
+  font-weight: normal;
 }
 
 .inner-page .top {
@@ -387,7 +458,7 @@ body {
 }
 
 .inner-page .main-header {
-  margin-bottom: 54px;
+  margin-bottom: 79px;
 }
 
 fieldset {
@@ -398,12 +469,12 @@ fieldset {
 .filter {
   float: left;
   width: 240px;
-  min-height: 1100px;
 }
 
 .goods-list {
   float: right;
-  margin-bottom: 54px;
+  margin-bottom: 80px;
+  width: 640px;
 }
 
 .sorting {
@@ -449,13 +520,16 @@ fieldset {
 
 legend {
   font-size: 18px;
+  width: 100%;
   text-transform: uppercase;
   margin-bottom: -6px;
 }
 
-label {
+.filter label {
   font-size: 16px;
   margin-top: 22px;
+  display: block;
+  padding-left: 20px;
 }
 
 legend {
@@ -466,17 +540,83 @@ legend {
   min-height: 219px;
 }
 
+.range-controls {
+  position: relative;
+  height: 41px;
+  border-radius: 5px;
+  background: #f1f1f1;
+  margin-bottom: -10px;
+  padding-top: 59px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  float: left;
+  font-size: 16px;
+  display: inline-block;
+  width: 41%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  width: 50px;
+  padding: 8px 10px;
+    border-radius: 5px;
+  outline: none;
+  background: #f1f1f1;
+  margin-left: 0px;
+}
+
 .grid {
   min-height: 189px;
 }
 
 .features {
   min-height: 285px;
-}
-
-label {
-  display: block;
-  padding-left: 20px;
 }
 
 .layouts-image {
