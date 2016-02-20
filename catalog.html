@@ -13,7 +13,7 @@
   <header class="main-header">
     <div class="container clearfix">
       <div class="logo">
-        <a href="#"><img src="img/logo.png" width="" height="" alt="nerds"></a>
+        <a href="index.html"><img src="img/logo.png" width="" height="" alt="nerds"></a>
       </div>
       <div class="menu clearfix">
         <div class="cart-block">
@@ -22,13 +22,13 @@
         <nav class="main-navigation clearfix">
           <ul>
             <li>
-              <a href="#">Студия</a>
+              <a href="#" >Студия</a>
             </li>
             <li>
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a class="active-page" href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -62,35 +62,34 @@
         </fieldset>
         <fieldset class="grid">
           <legend>Сетка</legend>
-          <label>
-            <input type="radio" checked name="second-filter" value="adaptive">Адаптивная
-          </label>
-          <label>
-            <input type="radio" name="second-filter" value="fixed">Фиксированная
-          </label>
-          <label>
-            <input type="radio" name="second-filter" value="rubber">Резиновая
-          </label>
+          
+            <input type="radio" checked name="second-filter" value="adaptive" id="radio1">
+          <label for="radio1">Адаптивная</label>
+          
+            <input type="radio" disabled name="second-filter" value="fixed" id="radio2">
+          <label for="radio2">Фиксированная</label>
+          
+            <input type="radio" name="second-filter" value="rubber" id="radio3">
+          <label for="radio3">Резиновая</label>
         </fieldset>
         <fieldset class="features">
           <legend>Особенности</legend>
-          <label>
-            <input type="checkbox" checked name="slider">Слайдер
-          </label>
-          <label>
-            <input type="checkbox" name="advantages">Блок преимуществ
-          </label>
-          <label>
-            <input type="checkbox" checked name="news">Новости
-          </label>
-          <label>
-            <input type="checkbox" name="gallery">Галерея
-          </label>
-          <label>
-            <input type="checkbox" name="basket">Корзина
-          </label>
+            <input type="checkbox" checked name="slider" id="check1">
+          <label for="check1">Слайдер</label>
+          
+            <input type="checkbox" disabled name="advantages" id="check2">
+          <label for="check2">Блок преимуществ</label>
+          
+            <input type="checkbox" disabled name="news" id="check3">
+          <label for="check3">Новости</label>
+          
+            <input type="checkbox" name="gallery" id="check4">
+          <label for="check4">Галерея</label>
+          
+            <input type="checkbox" name="basket" id="check5">
+          <label for="check5">Корзина</label>
         </fieldset>
-        <input type="submit" value="Показать">
+        <input class="button button-show-me" type="submit" value="Показать">
       </form>
     </div>
     <div class="goods-list clearfix">
@@ -98,19 +97,19 @@
         <ul>
           <li>Сортировать:</li>
           <li>
-            <a href="#">По цене</a>
+            <a class="sorting-parametre" href="#">По цене</a>
           </li>
           <li>
-            <a href="#">По типу</a>
+            <a  class="sorting-parametre" href="#">По типу</a>
           </li>
           <li>
-            <a href="#">По функционалу</a>
+            <a  class="sorting-parametre" href="#">По функционалу</a>
           </li>
           <li>
-            <a href="#">▼</a>
+            <a class="sorting-up-and-down" href="#">▼</a>
           </li>
           <li>
-            <a href="#">▲</a>
+            <a class="sorting-up-and-down" href="#">▲</a>
           </li>
       </div>
       <div class="layouts-image">
@@ -119,7 +118,7 @@
           <div class="description">
             <h1><a href="#">AVIATOR</a></h1>
             <p>Одностраничный макет с авторским дизайном</p>
-            <a href="#">8000 Р.</a>
+            <a class="button button-price" href="#">8000 Р.</a>
           </div>
         </article>
         <article class="good">
@@ -128,7 +127,7 @@
             <h1><a href="#">SUNSET</a></h1>
             <p>Интернет-магазин
               <br>с личным кабинетом</p>
-            <a href="#">10000 Р.</a>
+            <a class="button button-price" href="#">10000 Р.</a>
           </div>
         </article>
         <article class="good">
@@ -136,7 +135,7 @@
           <div class="description">
             <h1><a href="#">FORTE</a></h1>
             <p>Отличный макет для личного блога</p>
-            <a href="#">5000 Р.</a>
+            <a class="button button-price" href="#">5000 Р.</a>
           </div>
         </article>
         <article class="good">
@@ -144,7 +143,7 @@
           <div class="description">
             <h1><a href="#">MODERN ORGANIC THAI</a></h1>
             <p>Сайт для ресторана быстрого питания</p>
-            <a href="#">12000 Р.</a>
+            <a class="button button-price" href="#">12000 Р.</a>
           </div>
         </article>
         <article class="good">
@@ -152,7 +151,7 @@
           <div class="description">
             <h1><a href="#">AVENUE</a></h1>
             <p>Макет для блога о путешествиях</p>
-            <a href="#">8000 Р.</a>
+            <a class="button button-price" href="#">8000 Р.</a>
           </div>
         </article>
         <article class="good">
@@ -160,7 +159,7 @@
           <div class="description">
             <h1><a href="#">DOVETAIL</a></h1>
             <p>Интернет-магазин с галереей товаров</p>
-            <a href="#">14000 Р.</a>
+            <a class="button button-price" href="#">14000 Р.</a>
           </div>
         </article>
       </div>
@@ -173,7 +172,6 @@
     </div>
   </div>
   <div class="map">
-    <div class="container clearfix">
       <div class="contacts">
         <p>NЁRDS DESIGN STUDIO
           <br>
@@ -182,9 +180,8 @@
           <br>
           <br> тел. +7 (812) 275-75-75
         </p>
-        <a href="#" class="buttom write-us">Напишите нам</a>
+        <a href="#" class="button button-write-us">Напишите нам</a>
       </div>
-    </div>
   </div>
   <footer class="main-footer">
     <div class="container clearfix">

@@ -14,7 +14,7 @@
     <div class="container clearfix">
      <div class="top">
       <div class="logo">
-        <a href="#"><img src="img/logo.png" width="" height="" alt="nerds"></a>
+        <a href="index.html"><img src="img/logo.png" width="" height="" alt="nerds"></a>
       </div>
       <div class="menu clearfix">
         <div class="cart-block">
@@ -23,7 +23,7 @@
         <nav class="main-navigation clearfix">
           <ul>
             <li>
-              <a href="#">Студия</a>
+              <a class="active-page" href="#" >Студия</a>
             </li>
             <li>
               <a href="#">Клиенты</a>
@@ -38,7 +38,7 @@
         </nav>
       </div>
       <div class="slider">
-      <input type="radio" id="btn-1" name="toggle">
+      <input type="radio" id="btn-1" name="toggle" checked>
       <input type="radio" id="btn-2" name="toggle">
       <input type="radio" id="btn-3" name="toggle">
        <div class="slides">
@@ -47,17 +47,17 @@
             <br>скрупулезно.</div>
           <p>Математически выверенный дизайн
             <br>для вашего сайта или мобильного приложения.</p>
-          <a href="#" class="button-more">Узнать больше</a>
+          <a href="#" class="button button-more">Узнать больше</a>
         </div>
         <div class="slide">
           <div class="slidename">Любите ли вы математику,<br>как любим ее мы?</div>
           <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, </p>
-          <a href="#" class="button-more">Узнать больше</a>
+          <a href="#" class="button button-more">Узнать больше</a>
         </div>
         <div class="slide">
           <div class="slidename">Только наркотики,<br>только хардкор!</div>
           <p>Все дизайнерские решения в нашей компании принимаются<br>только под воздействием качественных галлюциногенов.</p>
-          <a href="#" class="button-more">Узнать больше</a>
+          <a href="#" class="button button-more">Узнать больше</a>
         </div>
        </div>
         <div class="slider-points">
@@ -75,20 +75,20 @@
         <img src="img/feature-web.png" alt="web-site">
         <div class="features-title">Веб-сайты</div>
         <p>Мир никогда не будет прежним посл того как увидит ваш сайт!</p>
-        <a href="#" class="button order">Заказать</a>
+        <a href="#" class="button button-order button-order-web">Заказать</a>
       </div>
       <div class="features-item">
         <img src="img/feature-app.png" alt="applications">
         <div class="features-title">Приложения</div>
         <p>Покорите топ-10 приложений
           <br>в AppStore и Google Play</p>
-        <a href="#" class="button order">Заказать</a>
+        <a href="#" class="button button-order button-order-app">Заказать</a>
       </div>
       <div class="features-item">
         <img src="img/feature-present.png" alt="presentations">
         <div class="features-title">Презентации</div>
         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-        <a href="#" class="button order">Заказать</a>
+        <a href="#" class="button button-order button-order-present">Заказать</a>
       </div>
     </section>
     <section class="content-columns clearfix">
@@ -129,8 +129,27 @@
           <br>
           <br> тел. +7 (812) 275-75-75
         </p>
-        <a href="#" class="buttom write-us">Напишите нам</a>
+        <a href="#" class="button button-write-us">Напишите нам</a>
       </div>
+      <div class="contact-form">
+        <form action="#" method="post">
+            <div class="message">
+            <div>
+            <p>Ваше имя:</p>
+             <label><input class="your-name" name="your-name" type="text" value="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА"></label>
+             </div>
+             <div>
+            <p>Ваш e-mail::</p>
+          <label><input class="your-e-mail" name="your-e-mail" type="text" value="ДЛЯ ОТПРАВКИ ОТВЕТА"></label>
+              </div>
+              <div>
+            <p>Текст письма:</p>
+          <label><input class="your-letter" name="your-letter" type="text" value="В СВОБОДНОЙ ФОРМЕ"></label>
+              </div>
+          </div>
+        <input class="button button-send" type="submit" value="Отправить">
+      </form>
+    </div>
   </div>
   <footer class="main-footer">
     <div class="container clearfix">
