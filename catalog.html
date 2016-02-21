@@ -6,7 +6,7 @@
   <title>Nerds</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:500,500italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style-mini.css">
 </head>
 
 <body class="inner-page">
@@ -22,13 +22,13 @@
         <nav class="main-navigation clearfix">
           <ul>
             <li>
-              <a href="#" >Студия</a>
+              <a href="index.html">Студия</a>
             </li>
             <li>
               <a href="#">Клиенты</a>
             </li>
-            <li>
-              <a class="active-page" href="#">Магазин</a>
+            <li class="active-page">
+              <a href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -47,46 +47,43 @@
       <form action="#" method="post">
         <fieldset class="price">
           <legend>Стоимость</legend>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar" style="margin-left: 20%; width: 30%">
-                </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="margin-left: 20%; width: 30%">
               </div>
-              <div class="toggle toggle-min"></div>
-              <div class="toggle toggle-max"></div>
             </div>
-            <div class=price-controls>
-             <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от
+              <input name="min-price" type="text" value="0">
+            </label>
+            <label class="max-price">до
+              <input name="max-price" type="text" value="15000">
+            </label>
           </div>
         </fieldset>
         <fieldset class="grid">
           <legend>Сетка</legend>
-          
-            <input type="radio" checked name="second-filter" value="adaptive" id="radio1">
+          <input type="radio" checked name="second-filter" value="adaptive" id="radio1">
           <label for="radio1">Адаптивная</label>
-          
-            <input type="radio" disabled name="second-filter" value="fixed" id="radio2">
+          <input type="radio" disabled name="second-filter" value="fixed" id="radio2">
           <label for="radio2">Фиксированная</label>
-          
-            <input type="radio" name="second-filter" value="rubber" id="radio3">
+          <input type="radio" name="second-filter" value="rubber" id="radio3">
           <label for="radio3">Резиновая</label>
         </fieldset>
         <fieldset class="features">
           <legend>Особенности</legend>
-            <input type="checkbox" checked name="slider" id="check1">
+          <input type="checkbox" checked name="slider" id="check1">
           <label for="check1">Слайдер</label>
-          
-            <input type="checkbox" disabled name="advantages" id="check2">
+          <input type="checkbox" disabled name="advantages" id="check2">
           <label for="check2">Блок преимуществ</label>
-          
-            <input type="checkbox" disabled name="news" id="check3">
+          <input type="checkbox" disabled name="news" id="check3">
           <label for="check3">Новости</label>
-          
-            <input type="checkbox" name="gallery" id="check4">
+          <input type="checkbox" name="gallery" id="check4">
           <label for="check4">Галерея</label>
-          
-            <input type="checkbox" name="basket" id="check5">
+          <input type="checkbox" name="basket" id="check5">
           <label for="check5">Корзина</label>
         </fieldset>
         <input class="button button-show-me" type="submit" value="Показать">
@@ -97,13 +94,13 @@
         <ul>
           <li>Сортировать:</li>
           <li>
-            <a class="sorting-parametre" href="#">По цене</a>
+            <a class="sorting-parameter" href="#">По цене</a>
           </li>
           <li>
-            <a  class="sorting-parametre" href="#">По типу</a>
+            <a class="sorting-parameter" href="#">По типу</a>
           </li>
           <li>
-            <a  class="sorting-parametre" href="#">По функционалу</a>
+            <a class="sorting-parameter" href="#">По функционалу</a>
           </li>
           <li>
             <a class="sorting-up-and-down" href="#">▼</a>
@@ -111,6 +108,7 @@
           <li>
             <a class="sorting-up-and-down" href="#">▲</a>
           </li>
+        </ul>
       </div>
       <div class="layouts-image">
         <article class="good">
@@ -125,8 +123,8 @@
           <img src="img/sunset.jpg" width="240" height="240" alt="sunset">
           <div class="description">
             <h1><a href="#">SUNSET</a></h1>
-            <p>Интернет-магазин
-              <br>с личным кабинетом</p>
+            <p>Интернет-магазин<br>
+               с личным кабинетом</p>
             <a class="button button-price" href="#">10000 Р.</a>
           </div>
         </article>
@@ -164,7 +162,7 @@
         </article>
       </div>
       <div class="paginator">
-        <p class="paginator-active">1</p>
+        <span class="paginator-active">1</span>
         <a class="paginator" href="#">2</a>
         <a class="paginator" href="#">3</a>
         <a class="paginator-next" href="#">Следующая</a>
@@ -172,16 +170,40 @@
     </div>
   </div>
   <div class="map">
-      <div class="contacts">
-        <p>NЁRDS DESIGN STUDIO
-          <br>
-          <br> 191186, Санкт-Петербург,
-          <br> ул. Б. Конюшенная, д. 19/8
-          <br>
-          <br> тел. +7 (812) 275-75-75
-        </p>
-        <a href="#" class="button button-write-us">Напишите нам</a>
-      </div>
+    <div class="contacts">
+      <p>NЁRDS DESIGN STUDIO<br><br>
+         191186, Санкт-Петербург,<br>
+         ул. Б. Конюшенная, д. 19/8<br><br>
+         тел. +7 (812) 275-75-75
+      </p>
+      <a href="#" class="button button-write-us">Напишите нам</a>
+    </div>
+    <div class="contact-form">
+      <a href="#" class="close-form"><img src="img/close-button.png"></a>
+      <form action="#" method="post">
+        <div class="message">
+          <div>
+            <p>Ваше имя:</p>
+            <label>
+              <textarea class="your-name" name="your-name">ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА</textarea>
+            </label>
+          </div>
+          <div>
+            <p>Ваш e-mail::</p>
+            <label>
+              <textarea class="your-name" rows="1" cols="45" name="your-e-mail">ДЛЯ ОТПРАВКИ ОТВЕТА</textarea>
+            </label>
+          </div>
+          <div>
+            <p>Текст письма:</p>
+            <label>
+              <textarea class="your-letter" rows="10" cols="45" name="your-letter">В СВОБОДНОЙ ФОРМЕ</textarea>
+            </label>
+          </div>
+        </div>
+        <input class="button button-send" type="submit" value="Отправить">
+      </form>
+    </div>
   </div>
   <footer class="main-footer">
     <div class="container clearfix">
@@ -197,5 +219,4 @@
     </div>
   </footer>
 </body>
-
 </html>
