@@ -182,6 +182,7 @@ body {
   padding: 10px 7px;
   width: 226px;
   text-align: center;
+  vertical-align: top;
 }
 
 .slide:nth-child(1) {
@@ -1015,6 +1016,7 @@ input[type="radio"]:checked:hover + label {
   font-size: 16px;
   display: inline-block;
   width: 45%;
+  vertical-align: top;
 }
 
 .max-price {
@@ -1091,6 +1093,7 @@ input[type="radio"]:checked:hover + label {
   display: inline-block;
   margin-left: 80px;
   font-size: 0;
+  vertical-align: baseline;
 }
 
 .paginator span,
